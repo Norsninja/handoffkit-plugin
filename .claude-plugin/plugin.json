@@ -1,0 +1,20 @@
+{
+  "name": "handoffkit",
+  "version": "1.0.0",
+  "description": "Push AI session handoffs to HandoffKit automatically. Manages context, memory, and session continuity across Claude Code sessions — store handoffs, organize by project, copy what you need for the next session. One-command setup.",
+  "author": {
+    "name": "Mike C Singer"
+  },
+  "homepage": "https://handoffkit.com",
+  "repository": "https://github.com/Norsninja/handoffkit-plugin",
+  "keywords": [
+    "handoff",
+    "session-continuity",
+    "context-management",
+    "memory",
+    "ai-context",
+    "session",
+    "continuity",
+    "claude-code"
+  ]
+}
