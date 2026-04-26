@@ -1,0 +1,20 @@
+{
+  "name": "norsninja",
+  "version": "1.0.0",
+  "description": "Plugins by Mike C Singer (Norsninja).",
+  "owner": {
+    "name": "Mike C Singer"
+  },
+  "plugins": [
+    {
+      "name": "handoffkit",
+      "source": ".",
+      "description": "Push AI session handoffs to HandoffKit automatically via MCP. One-command per-project setup, secure credential storage, no creds in repo files.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Mike C Singer"
+      },
+      "category": "productivity"
+    }
+  ]
+}
