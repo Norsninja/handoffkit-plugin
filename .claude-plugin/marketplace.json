@@ -8,7 +8,7 @@
   "plugins": [
     {
       "name": "handoffkit",
-      "source": ".",
+      "source": "./plugins/handoffkit",
       "description": "Push AI session handoffs to HandoffKit automatically via MCP. One-command per-project setup, secure credential storage, no creds in repo files.",
       "version": "1.0.0",
       "author": {
