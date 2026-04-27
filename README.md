@@ -13,13 +13,24 @@ This plugin provides a one-command setup (`/handoffkit:setup`) that connects you
 
 ## Setup
 
-1. Install this plugin in Claude Code
-2. Go to [handoffkit.com/settings](https://handoffkit.com/settings) → **Plugin Integration** → **Generate Token**
-3. Select the project you want to link
-4. Copy the token and run `/handoffkit:setup` in Claude Code
+In Claude Code, add the marketplace and install the plugin:
+
+```
+/plugin marketplace add Norsninja/handoffkit-plugin
+/plugin install handoffkit@norsninja
+```
+
+Then link a project:
+
+1. Go to [handoffkit.com/settings](https://handoffkit.com/settings) → **Plugin Integration** → **Generate Token**
+2. Select the project you want to link
+3. Copy the token (starts with `hk_setup_`, expires in 10 minutes)
+4. In Claude Code, in your project directory, run `/handoffkit:setup`
 5. Paste the token when prompted
 
 That's it. Restart Claude Code and the `push-handoff` MCP tool is available.
+
+If your project has a legacy `.handoffkit.json` (with an `api_key` field) from an earlier prototype, `/handoffkit:setup` detects it automatically, migrates the file to a credential-free marker, updates your `/handoff` command, and revokes the old key on the server.
 
 ## How it works
 
